@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <title>CBIT</title>
+
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=pacifico">
+    <style type="text/css">
+     .slide1{
+      background-image:url("1.jpg");
+      height: 500px;
+      background-repeat:no-repeat;
+      background-position:center;
+      background-size: cover;
+      } 
+      .slide2{
+      background-image:url("2.jpg");
+      height: 500px;
+      background-repeat:no-repeat;
+      background-position:center;
+      background-size: cover;
+      }  
+
+     .slide3{
+      background-image:url("3.jpg");
+      height: 500px;
+      background-repeat:no-repeat;
+      background-position:center;
+      background-size: cover;
+      }  
+     .slide4{
+      background-image:url("4.jpg");
+      height: 500px;
+      background-repeat:no-repeat;
+      background-position:center;
+      background-size: cover;
+      }  
+      .carousel-caption h1{
+        font-size: 5.4em;
+        font-family: 'pacifico',cursive;
+        padding-bottom: .4em;
+      }
+      .carousel-caption p{
+        font-size: 2em;
+      }
+      .jumbotron{
+      	background-image: url("back.png");
+      }
+      .jumbotron p{
+      	font-size: 16px;
+      }
+      #map {
+        width: 500px;
+        height: 400px;
+      }
+ 
+
+
+    </style>
+
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-fixed-top .navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">CBIT Events</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Upcoming</a></li>
+                    <li><a href="completed.html">Completed</a></li>
+                    <li><a href="media.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+           </div>
+         </div>
+        
+<!--carousel starts here-->
+    
+    
+  <div id="theCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#theCarousel" data-slide-to="1"></li>
+    <li data-target="#theCarousel" data-slide-to="2"></li>
+    <li data-target="#theCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" >
+      <div class="item active">
+        <div class="slide1"></div>
+          <div class="carousel-caption">
+           <h1>CBIT</h1>
+           <p>ESTD 1979</p>      
+          </div>
+    
+           </div>
+              
+      <div class="item ">
+        <div class="slide2"></div>
+          <div class="carousel-caption">
+           <h1>CBIT</h1>
+           <p>ESTD 1979</p>      
+          </div>
+          </div> 
+
+   
+      <div class="item ">
+        <div class="slide3"></div>
+          <div class="carousel-caption">
+           <h1>CBIT</h1>
+           <p>ESTD 1979</p>      
+          </div>
+          </div> 
+
+   
+      <div class="item ">
+        <div class="slide4"></div>
+          <div class="carousel-caption">
+           <h1>CBIT</h1>
+           <p>ESTD 1979</p>      
+          </div>
+          </div> 
+
+
+  </div>
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#theCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+  <a class="right carousel-control" href="#theCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+</a>
+</div>
+<br>
+  <div class="container">
+  	<div class="jumbotron">
+    <div class="row">
+
+      <img src="logo.png" class="col-md-3 img-responsive" >
+         <div class="col-md-9">
+         <br>
+         <br>
+         <p style="font-size:20px" class="center-block">CBIT was established in 1979. The institute was initially affiliated to Osmania University, with three undergraduate programmes and an intake of 200 students. By 2014 this had grown to nine undergraduate and seven postgraduate courses with a total intake of 9000 students. It was inaugurated by late Dr. Marri Chenna Reddy. The founder and the first principal of the college was Vundela Malakonda Reddy.
+        CBIT is the first private engineering college in Telangana region</p>
+       </div>
+        <hr>
+    </div>
+    <br>
+    <hr>
+     <div class="col-md-3">
+
+       </div>
+     <div id="map"></div>
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+          center: {lat: 17.390122, lng: 78.3164156},
+          zoom: 14
+        });
+          
+
+      }
+
+    </script>
+
+    </div>
+    </div>
+    </function>
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+
+
+
+</body>
+</html>
